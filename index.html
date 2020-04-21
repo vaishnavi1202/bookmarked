@@ -8,15 +8,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />	
         
         <link href = "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel = "stylesheet">
-        <link rel = "stylesheet" type="text/css" href = "styles.css"/>	
+        <link rel = "stylesheet" type="text/css" href = "../CSS/styles.css"/>	
         <link rel = "shortcut icon" type = "image/png" href ="fav.png">
         <title>BooKMarkeD</title>
         </head>	 
         <body>
-            <a name="top"/>	
-            <header class = "header">
+            <div class="navigation">
+                <input type="checkbox" class = "navigation_checkbox" id = "navi_toggle">
+                <label for ="navi_toggle" class = "navigation_button">
+                    <span class="navigation_icon">&nbsp;</span>
+                </label>
+                <div class="navigation_background">&nbsp;</div>
+                <nav class="navigation_nav">
+                    <ul class = "navigation_list">
+                        <li class="navigation_item"><a href = "#top" class = "navigation_link">KNOW US</a></li>
+                        <li class="navigation_item"><a href = "#launch" class = "navigation_link">WHAT'S NEW</a></li>
+                        <li class="navigation_item"><a href = "#surprises" class = "navigation_link">SPECIAL OFFERS</a></li>
+                        <li class="navigation_item"><a href = "#bestsellers" class = "navigation_link">OUR BESTSELLERS</a></li>
+                        <li class="navigation_item"><a href = "#reviews" class = "navigation_link">KNOW WHAT OTHERS SAY</a></li>
+                        <li class="navigation_item"><a href = "#form" class = "navigation_link">TELL US YOUR REVIEW</a></li>
+                        <li class="navigation_item"><a href = "#footer" class = "navigation_link">CONNECT WITH US</a></li>
+                        <li class="navigation_item"><a href = "https://www.google.com/intl/en_in/covid19/" class = "navigation_link">OFFICIAL GOOGLE ADVISORY</a></li>
+                    </ul>
+                </nav>
+            </div>	
+            <header class = "header" id ="top">
                <div  class= "logodiv">
-                   <img src = "log.png" alt = "Logo" class= "logo">
+                   <img src = "images/log.png" alt = "Logo" class= "logo">
                 </div>
                
                <div class="text-box">
@@ -27,11 +45,11 @@
                         
                           <span class = "tagline">Book your favourite book soon!</span>
                      </h1>
-                     <a href = "#surp"class = " btn btn-white btn-an">Get Surprised</a>
+                     <a href = "#surprises"class = " btn btn-color btn-an">Get Surprised</a>
                 </div>
             </header>
-            <a name ="new"/>
-            <section class = "launch">
+           
+            <section class = "launch" id ="launch">
                 <div class = "center-align">
                     <h2 class="heading-secondary">
                         Launching Soon
@@ -64,80 +82,92 @@
                 </div>
                 
             </section>
-            <a name = "surp"/>
-            <section class= "surprises">
+            
+            <section class= "surprises" id ="surprises">
                 <div class = "center-align">
                 <h2 class="heading-secondary">
                    Get Surprised
                 </h2>
-            </div>
+                </div>
                 
                
                 <div class="container-2">
-                    <div class = "col-1of3 card">
-                        
-                               <img src="discount_1.jpg" class = "surimg">
-                               <h3 class="surheading">Pride and Prejudice</h3>
-
-                          
-                        
-                                <p class = "surtext">
-                                    Earlier at Rs.<span class = "strikethrough">500</span>
-                                    <br/>
-                                    Now at just Rs.<span class="red">250</span>
-                                    <br/>
-                                    <br/>
-                                    Terms and Conditions apply.
-                                </p>
-                                <a href="#">Read More </a>
-                            
-                            
-                        
-                        
+                    <div class = "col-1of3">
+                        <div class = "card">
+                            <div class="card_side">
+                                <div class="card_side--1">
+                                    <img src="discount_1.jpg" class = "surimg">
+                                    <h3 class="surheading">Pride and Prejudice</h3>
+    
+                                </div>
+                                <div class = "card_side--2">
+                                    <p class = "surtext">
+                                        Earlier at Rs.<span class = "strikethrough">500</span>
+                                        <br/>
+                                        Now at just Rs.<span class="red">250</span>
+                                        <br/>
+                                        <br/>
+                                        Terms and Conditions apply.
+                                    </p>
+                                    <a href="#popup" class="btn btn-white">Know More </a>
+                                </div>
+                                 
+                            </div>
+                        </div>    
                     </div>
-                    <div class = "col-2of3 card">
-                    
-                        <img src="discount_2.jpg" class = "surimg">
-                         <h3 class="surheading">The 7 habits of Highly Effective people</h3>
-
-                        
-                        
+                    <div class = "col-2of3">
+                        <div class="card">
+                            <div class ="card_side">
+                                <div class ="card_side--1">
+                                    <img src="discount_2.jpg" class = "surimg">
+                                    <h3 class="surheading">The 7 habits of Highly Effective people</h3>
+                                </div>
                             
-                        <p class = "surtext">
-                             Earlier at Rs.<span class = "strikethrough">800</span>
-                                    <br/>
-                                    Now at just Rs.<span class="red">400</span>
-                                    <br/>
-                                    <br/>
-                                    Terms and Conditions apply.
-                        </p>
-                        <a href="#">Read More </a>
+                               
+                                
+                                    <div class="card_side--2">   
+                                   <p class = "surtext">
+                                    Earlier at Rs.<span class = "strikethrough">800</span>
+                                           <br/>
+                                           Now at just Rs.<span class="red">400</span>
+                                           <br/>
+                                           <br/>
+                                           Terms and Conditions apply.
+                                   </p>
+                                   <a href="#popup" class="btn btn-white">Know More </a>
+                                   </div>
+                                
+                            </div>
                             
-                            
-                        
+                        </div>   
                     </div>
-                    <div class="col-3of3 card">
-                               <img src="discount_3.jpg" class = "surimg">
-                               <h3 class="surheading">The Lord of the Rings </h3>
-
-                          
-                                <p class = "surtext">
-                                    Earlier at Rs.<span class = "strikethrough">1000</span>
-                                    <br/>
-                                    Now at just Rs.<span class="red">500</span>
-                                    <br/>
-                                    <br/>
-                                    Terms and Conditions apply.
-                                </p>
-                                <a href="#">Read More </a>
+                    <div class="col-3of3">
+                        <div class = "card">
+                            <div class="card_side">
+                                <div class ="card_side--1">
+                                    <img src="discount_3.jpg" class = "surimg">
+                                    <h3 class="surheading">The Lord of the Rings </h3>
+                                </div>
+    
+                                <div class = "card_side--2">
+                                 <p class = "surtext">
+                                     Earlier at Rs.<span class = "strikethrough">1000</span>
+                                     <br/>
+                                     Now at just Rs.<span class="red">500</span>
+                                     <br/>
+                                     <br/>
+                                     Terms and Conditions apply.
+                                 </p>
+                                 <a href="#popup" class="btn btn-white">Know More </a>
+                                </div>
+                            </div>
                             
-                            
-                        
+                        </div>   
                     </div>
                 </div>
             </section>
-            <a name="bestseller"/>
-            <section class = "most-bought">
+            
+            <section class = "most-bought" id = "bestsellers">
                 <div class = "center-align">
                     <h2 class="white-font">
                        Our Bestsellers
@@ -156,7 +186,7 @@
                             <p class = "cust">Customer Review : 4.9 Stars</p> 
                         </div>
                         <div class = "col-3-6 card-2">
-                            <img src ="images/book_3.jpg" class = "circleframe">
+                            <img src ="book_3.jpg" class = "circleframe">
                             <h3 class = "bookname">The Alchemist </h3>
                             <p class = "cust">Customer Review : 4.9 Stars</p>
                         </div>
@@ -180,26 +210,29 @@
                     
                 </div>
             </section>
-            <a name="review"/>
-            <section class="user-review">
+            
+            <section class="user-review" id = "reviews">
                 <div class = "center-align">
                     <h2 class="heading-secondary">
                        Happy Customer Reviews
                     </h2>
                 </div>
                 <div class="container-4">
-                    <div class = "col-1of6 card-3">
-                        <img src= "user_1.jpg" class = "userimg">
-                        <h3 class =  "center-align  userimg ">Mr.R</h3>
+                    <div class = "col-1of6 card-3 ">
+                        <img src= "user_1.jpg" title ="  Mr. RAMESH   " >
+                       
+                        
                     </div>
                     <div class ="col-2of6 card-3">
                         <p class ="review">
                             A book lover's paradise.
                         </p>
                     </div>
-                    <div class = "col-3of6 card-3">
-                        <img src= "user_2.jpg" class = "userimg">
-                        <h3 class =  "center-align  userimg">Mrs.B</h3>
+                    <div class = "col-3of6 card-3 ">
+                        <img src= "user_2.jpg" title="   Mrs. MEERA   " >
+                        
+                        
+                        
                     </div>
                     <div class ="col-4of6 card-3">
                         <p class ="review">
@@ -207,9 +240,13 @@
                         </p>
                     </div>
                     <div class = "col-5of6 card-3">
-                        <img src= "user_3.jpg" class = "userimg">
-                        <h3 class =  "center-align  userimg ">Mrs.S</h3>
-                    </div>
+                        
+                            <img src= "user_3.jpg" title="   Mrs. SOFIA   " >
+
+                       
+                        
+                     </div>         
+                    
                     <div class ="col-6of6 card-3">
                         <p class ="review">
                             Happy with the Purchase.
@@ -217,8 +254,8 @@
                     </div>
                 </div>
             </section>
-            <a name="form"/>
-            <section class = "give-review">
+            
+            <section class = "give-review" id = "form">
                 <div class = "center-align">
                     <h2 class = "heading-secondary" >
                        Fill in Your Review
@@ -231,16 +268,17 @@
                      <br /><br />
                      <textarea placeholder="Your Review Here"></textarea>
                      <br /><br/>
-                     <input type="submit" value="SUBMIT"/>
+                     <input type="submit" class = "btn btn-color" value="SUBMIT"/>
                      
 
                  </form>
 
             </section>
-            <a name = "footer"/>
-            <footer class="footer">
+            
+            <footer class="footer" id = "footer">
                 <div class="footer-logo-box">
-                    <img src="head.png" alt="full logo" class= "footer-logo">
+                    <img src="log.png" alt="company logo" class="l">
+                    <img src="head.png" alt="company name" class= "footer-logo">
 
                 </div>
                 <div class ="container-5">
@@ -259,10 +297,25 @@
                 </div>
 
             </footer>
+            <div class = "popup" id = "popup">
+                <div class = "popup_content">
+                    <a href="#surprises" class = "popup_close">&times;</a>
+                    <h2 class = "heading-secondary">Terms And Conditions</h2>
+                    <ul>
+                        <li>1.Once Purchased ,will not be returned</li>
+                        <li>2.Use code #50Per</li>
+                        <li>3.Offer Valid Only till 30thApril</li>
 
-            
+                    </ul>
+                    <a href="#" class = "btn btn-white">I Agree</a>
+                </div>
+            </div>
+
+            <div class="back_to_top">
+                <a href="#top" class="btn btn-white center-align">BACK TO TOP</a>
+            </div>
                  
                
             	
         </body>	
-    </html>	
+    </html>		
